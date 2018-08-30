@@ -72,3 +72,5 @@ for k in range(13):
     size = size - 12
 
 window.close_on_mouse_click()
+
+#Done
