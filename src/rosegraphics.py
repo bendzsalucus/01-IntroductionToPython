@@ -1875,7 +1875,7 @@ class SimpleTurtle(object):
         self._update_real_turtle()
         self._turtle.circle(radius)
 
-    def draw_square(self, length_of_sides):
+    def draw_square(self, length_of_sides: object) -> object:
         """
         Makes this SimpleTurtle draw a square with the given value
         for the length of each of its sides.

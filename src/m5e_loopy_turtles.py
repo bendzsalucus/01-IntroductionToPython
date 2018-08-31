@@ -62,7 +62,7 @@ for k in range(13):
     # Move a little below and to the right of where the previous
     # square started.  Do this with the pen up (so nothing is drawn).
     blue_turtle.pen_up()
-    blue_turtle.right(45)
+    blue_turtle.right(70)
     blue_turtle.forward(10)
     blue_turtle.left(45)
 
