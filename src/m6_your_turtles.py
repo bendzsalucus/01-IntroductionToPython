@@ -67,3 +67,5 @@ George.speed = 10
 
 for k in range (100):
     George.draw_regular_polygon(10,50)
+
+window.close_on_mouse_click()
