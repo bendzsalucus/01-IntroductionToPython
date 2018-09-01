@@ -86,7 +86,7 @@ h_turtle.right(90)
 h_turtle.forward(15)
 h_turtle.right(180)
 h_turtle.forward(30)
-#this makes an I
+#this makes an i
 h_turtle.right(90)
 h_turtle.pen_up()
 h_turtle.forward(20)
