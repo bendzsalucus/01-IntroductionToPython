@@ -51,9 +51,10 @@ blue_turtle.speed = 10
 blue_turtle.right(90)
 blue_turtle.forward(200)
 blue_turtle.pen_up()
-blue_turtle.go_to(100, turtle_window_y_positon)
+blue_turtle.go_to(100, -40)
 blue_turtle.pen_down()
 blue_turtle_pen = rg.Pen('green', 10)
+blue_turtle.forward(150)
 
 
 window.close_on_mouse_click()
