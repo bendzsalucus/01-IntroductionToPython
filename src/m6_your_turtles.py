@@ -32,27 +32,28 @@ window = rg.TurtleWindow()
 
 bert = rg.SimpleTurtle('turtle')
 bert_pen = rg.Pen
-bert.speed = 20
+bert.speed = 10
 
 size = 100
 
 bert_pen('blue', 20)
-for k in range(20):
-    size = size - 10
+
+for k in range(5):
+    size = size - 20
     bert.pen_down()
     bert.draw_circle(size)
 
 
 kurt = rg.SimpleTurtle('turtle')
 kurt_pen = rg.Pen ('red', 40)
+#This pen does not work for some reason will as on this in class.
 kurt.speed = 10
 
 size_kurt = 150
 
 for k in range (10):
     kurt.forward(200 - k)
-    kurt.right(90 - k )
-    kurt.pen_up()
+    kurt.right(90 - k)
     kurt.forward(200)
     kurt.right(90)
     kurt.pen_down()
@@ -65,7 +66,37 @@ George = rg.SimpleTurtle('turtle')
 George_pen = rg.Pen
 George.speed = 10
 
-for k in range (100):
+for k in range (4):
     George.draw_regular_polygon(10,50)
+
+h_turtle = rg.SimpleTurtle('turtle')
+h_turtle_pen = rg.Pen('red', 30)
+h_turtle.speed = 10
+#this makes an H
+h_turtle.right(180)
+h_turtle.pen_up()
+h_turtle.forward(300)
+h_turtle.pen_down()
+h_turtle.forward(30)
+h_turtle.right(180)
+h_turtle.forward(15)
+h_turtle.right(90)
+h_turtle.forward(15)
+h_turtle.right(90)
+h_turtle.forward(15)
+h_turtle.right(180)
+h_turtle.forward(30)
+#this makes an I
+h_turtle.right(90)
+h_turtle.pen_up()
+h_turtle.forward(20)
+h_turtle.right(270)
+h_turtle.pen_down()
+h_turtle.right(180)
+h_turtle.forward(10)
+h_turtle.pen_up()
+h_turtle.forward(4)
+h_turtle.pen_down()
+h_turtle.forward(15)
 
 window.close_on_mouse_click()
