@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 ########################################################################
 
 ########################################################################
-# TODO: 2.
+# Done: 2.
 #   Write code that accomplishes the following:
 #     - Constructs a SimpleTurtle with a  blue  Pen.
 #     - Makes the SimpleTurtle go straight UP 200 pixels.
@@ -41,19 +41,22 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 
 import rosegraphics as rg
 
-window = rg.TurtleWindow
+window = rg.TurtleWindow()
 
 blue_turtle = rg.SimpleTurtle('turtle')
-blue_turtle_pen = rg.Pen('blue', 20)
+blue_turtle.pen = rg.Pen('green', 40)
+blue_turtle.pen.thickness = 20
+blue_turtle.pen.color = 'blue'
 blue_turtle.speed = 10
 
-
+point = rg.Point(100, 40)
 blue_turtle.right(90)
 blue_turtle.forward(200)
 blue_turtle.pen_up()
-blue_turtle.go_to(100, -40)
+blue_turtle.go_to(point)
 blue_turtle.pen_down()
-blue_turtle_pen = rg.Pen('green', 10)
+blue_turtle.pen.thickness = 20
+blue_turtle.pen.color = 'red'
 blue_turtle.forward(150)
 
 

@@ -98,5 +98,7 @@ h_turtle.pen_up()
 h_turtle.forward(4)
 h_turtle.pen_down()
 h_turtle.forward(15)
+h_turtle.pen_up()
+h_turtle.forward(50)
 
 window.close_on_mouse_click()

@@ -26,3 +26,9 @@ print('one', 'two', 'buckle my shoe')
 
 print(3 + 9)
 print('3 + 9', 'versus', 3 + 9)
+
+import rosegraphics as rg
+
+p2 = rg.Point(7, 3)
+p1 = rg.Point(100, 50)
+print((4 * p1.x) + p2.y)
